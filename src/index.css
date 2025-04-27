@@ -1,0 +1,57 @@
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  label,
+  input,
+  select {
+    font: inherit;
+    display: block;
+  }
+
+  fieldset {
+    appearance: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  legend {
+    padding: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+
+  :focus-visible {
+    outline: 3px solid rgb(93, 25, 240);
+    outline-offset: 2px;
+  }
+}
+
+:root {
+  font-family: system-ui;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  text-wrap: pretty;
+}
+
+body {
+  margin-block: 1rem;
+  margin-inline: 0;
+}

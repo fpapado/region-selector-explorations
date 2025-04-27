@@ -1,0 +1,57 @@
+body {
+  background-color: #bbb;
+}
+
+main {
+  background-color: #fefefe;
+  max-width: 40rem;
+  margin-inline: auto;
+}
+
+form {
+  border: 2px solid #111;
+  padding: 1rem;
+}
+
+label {
+  font-weight: 600;
+}
+
+p {
+  margin-block: 0.5rem;
+  max-width: 60ch;
+}
+
+select {
+  margin-block-start: 0.5rem;
+  padding: 0.25rem;
+}
+
+fieldset > * + * {
+  margin-block-start: 1rem;
+}
+
+select {
+  font-size: 1rem;
+  border: 2px solid #111;
+}
+
+select.language {
+  /* DisplayNames will show some languages as lowercase, and some as uppercase.
+  This might be an issue in CLDR, or it might indeed be intended for a given
+  locale. So capitalising everying might not be strictly idiomatic; we do it for
+  consistency, but you might decide otherwise. */
+  text-transform: capitalize;
+}
+
+dt {
+  font-weight: 600;
+}
+
+* + dt {
+  margin-block-start: 0.5rem;
+}
+
+dd {
+  margin-inline: 0;
+}
